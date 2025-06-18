@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   /** @type {HTMLCanvasElement} */
-  let canvas = document.getElementById("canvas");
+  const canvas = document.getElementById("canvas");
   /** @type {CanvasRenderingContext2D} */
-  let context = canvas.getContext("2d");
-  let width = (canvas.width = window.innerWidth);
-  let height = (canvas.height = window.innerHeight);
+  const context = canvas.getContext("2d");
+  const width = (canvas.width = window.innerWidth);
+  const height = (canvas.height = window.innerHeight);
 
-  let p = particle.create(100, 0, 1, 0, 0.01);
+  const p = particle.create(100, 0, 1, 0, 0.01);
 
   update();
 
